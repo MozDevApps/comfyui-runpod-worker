@@ -1,0 +1,9 @@
+[build]
+  image = "your-docker-image:latest"
+
+[worker]
+  entrypoint = "rp_handler.handler"
+  timeout_seconds = 600
+  memory_mb = 32768
+  cpu = 4
+  gpu = "nvidia.com/gpu"  # choose according to runpod options
